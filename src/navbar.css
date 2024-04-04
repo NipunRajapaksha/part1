@@ -1,0 +1,152 @@
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: rgb(255, 255, 255);
+}
+.nav_brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.nav_toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(0, 0, 0);
+    transition:0.4s
+}
+.nav_toggler{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav_toggler{
+        display: block;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+}
+/*Nav action class*/
+.nav_active{
+    transform: translateX(0);
+}
+
+/*Togger Icon Animation*/
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+
+}
+.toggle .line2{
+    opacity: 0;
+
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+.heading{
+    background-color: #000000;
+    color: #EEAD1C;
+    margin-bottom: 0px;
+    padding: 20px 0 10px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.welcome{ 
+    padding: 200px 0px;
+    background-image: url(C:\Users\MSI\Desktop\n.jpg);
+    color:aliceblue;
+    background-position: center;
+}
+
+@media (max-width:991px) {
+    .welcome{ 
+        padding: 200px 0px;
+        background-image: url(C:\Users\MSI\Desktop\n.jpg);
+        color:aliceblue;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        
+    }
+    
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   
+}
+.c1{
+    display: flex;
+  align-items: center;
+  max-width: 800px; /* Adjust max-width as per your requirement */
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+.img{
+  max-width: 100%;
+  height: auto;
+}
+.whatwedo{
+    text-align: center;
+    flex-grow: 1;
+  margin-left: 20px;
+    
+}
+.mission{
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
