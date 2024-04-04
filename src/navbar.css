@@ -140,8 +140,8 @@ a{
   height: auto;
 }
 .whatwedo{
-    text-align: center;
-    flex-grow: 1;
+  text-align: center;
+  flex-grow: 1;
   margin-left: 20px;
     
 }
