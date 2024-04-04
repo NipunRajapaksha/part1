@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import '../navbar.css';
+import '../aboutus.css';
 function Navbar() {
     const [active,setActive] = useState("nav_menu")
     const [toggleIcon, setToggleIcon] = useState("nav_toggler");
@@ -14,7 +14,7 @@ function Navbar() {
         : setToggleIcon("nav_toggler");     
     };
     return (
-  <><><><><><nav className="n">
+  <><><><><><nav className="nav">
         <a href="#" className="nav_brand">Intern Web Hub</a>
         <ul className={active}>
           <li className="nav_item"><a href="#" className="nav_link">Home</a></li>

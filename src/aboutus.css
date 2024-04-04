@@ -126,7 +126,7 @@ a{
 .c1{
     display: flex;
   align-items: center;
-  max-width: 800px; /* Adjust max-width as per your requirement */
+  max-width: 900px; /* Adjust max-width as per your requirement */
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -141,9 +141,8 @@ a{
 }
 .whatwedo{
   text-align: center;
-  flex-grow: 1;
   margin-left: 20px;
-    
+
 }
 .mission{
     text-align: center;
