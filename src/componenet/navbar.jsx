@@ -14,7 +14,7 @@ function Navbar() {
         : setToggleIcon("nav_toggler");     
     };
     return (
-  <><><><><><nav className="nav">
+  <><><><><><nav className="nipun">
         <a href="#" className="nav_brand">Intern Web Hub</a>
         <ul className={active}>
           <li className="nav_item"><a href="#" className="nav_link">Home</a></li>
