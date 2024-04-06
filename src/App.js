@@ -1,10 +1,12 @@
 import React from "react";
-import Navbar from "./componenet/aboutus";
+import Aboutus from "./componenet/aboutus";
+import Navbar from "./componenet/nav";
 
 function App() {
     return (
     <div>
         <Navbar/>
+        <Aboutus/> 
     </div>
     );
 }

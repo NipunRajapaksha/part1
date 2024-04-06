@@ -118,34 +118,99 @@ a{
     
 }
 .content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
    
 }
-.c1{
-    display: flex;
-  align-items: center;
-  max-width: 900px; /* Adjust max-width as per your requirement */
-  margin: 0 auto;
+
+
+.img{
+    flex: 1; /* Grow as much as possible */
+    text-align: center;
+    height: auto;
+}
+.whatwedo{
+    flex: 1; /* Grow as much as possible */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: center;
+    margin-left: 5%;
+    font-size: large;
+    margin-top: 5%;
+}
+.mission{
+    flex: 1; /* Grow as much as possible */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: center;
+    margin-right: 5%;
+    font-size: large;
+    margin-top: 5%;
 }
 @media (max-width: 768px) {
     .content {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: stretch; /* Stretch items to fit container width */
+    }
+  
+    .img,
+    .whatwedo,.mission {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .whatwedo,
+    .mission {
+      align-self: center; /* Center paragraphs on smaller screens */
     }
   }
-.img{
-  max-width: 100%;
-  height: auto;
-}
-.whatwedo{
-  text-align: center;
-  margin-left: 20px;
-
-}
-.mission{
+  .why{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin-left: 5%;
+   
+  }
+  .para{
+    flex: 1; /* Grow as much as possible */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: justify;
+    font-size: large;
+    
+  
+  }
+  .img1 {
+    flex: 1; /* Grow as much as possible */
     text-align: center;
-    flex-grow: 1;
-    margin-left: 20px;
-}
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .why {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: stretch; /* Stretch items to fit container width */
+    }
+  
+    .img1,
+    .para {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .para {
+      align-self: center; /* Center paragraphs on smaller screens */
+    }
+  }
+  .bullet-points {
+    list-style-type: circle; /* Change to circle or square for different bullet styles */
+  }
+  .get{
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
