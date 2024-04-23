@@ -7,7 +7,7 @@ function Aboutus() {
   <><><><><>
       <div class="heading">
           <h1>Intern Web Hub</h1>
-          <h3>&mdash; home>about us &mdash; </h3>
+          <h3> home>about us  </h3>
 
       </div></>
       <div class="welcome">
