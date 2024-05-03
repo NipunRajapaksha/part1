@@ -1,13 +1,13 @@
 import React from "react";
 import Aboutus from "./componenet/aboutus";
 import Navbar from "./componenet/nav";
-
+import ContactUs from "./componenet/contact";
 function App() {
     return (
-    <div>
-        <Navbar/>
-        <Aboutus/> 
-    </div>
+        
+        <><Navbar />
+        <ContactUs /></>
+        
     );
 }
 export default App;
